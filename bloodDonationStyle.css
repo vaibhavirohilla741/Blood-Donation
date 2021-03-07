@@ -70,4 +70,9 @@ li a:hover:not(.active) {
     margin-left: 25px;
     font-weight: 1px;
 }
+.button{
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
 
