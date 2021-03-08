@@ -1,89 +1,111 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position:fixed:
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-/* ..... */
-body
-{
-    display:flex;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration:none;
-    background: url(boat-sailor-moon-night-minimal-8k-qr.jpg)no-repeat center;
-    background-size: auto;
-    height: 150vh;
+body{
+  background:black;
+  font-family: sourse Sans pro;
 }
 .navbar
 {
-    position: fixed;
-    display: inline-block;
-    /* border: 1px solid black; */
+    /*position: fixed;*/
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    height: 10%; 
-}
-.navbar .navbarStyle .logo{
-    display: inline-block;
-    /* border: 1px solid black; */
-    font-weight: bolder;
-    font-size: 50px;
-}
-.navbar .navbarStyle .more{
-    display: inline-block;
-    margin-top: -5%;
-    /* border: 1px solid black; */
-    margin-left: 71%;
-    padding: 2px;
-    font-size: 20px;
-    font-weight: bold;
-    word-spacing: 5px;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-}
-.navbar .navbarStyle .search-bar{
-    display: inline;
-    padding: 2px;
-    float: right;
-    font-size: larger;
-    margin: 5px 5px 5px 5px;
-    /* border: 1px solid red; */
-}
-input{
-    width: 55%;
+    overflow: hidden;
+    /* background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center; */
     border-radius: 10px;
-    height: 3vh;
+
 }
-.navbar .navbarStyle .search-bar .search-for{
-    margin-top: -1px;
+
+.symbole 
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+}
+.navbar-style
+{
+    
+    padding: 1%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:white;
+}
+.input-field{
+    
+    position:absolute;
+    left: 25%;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: none;
+    width: 40%;
+  
+}
+/* link styling */
+ a
+{
+    font-size: 20px;
+    /* font-weight: bolder; */
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+    color:white;
+    font-weight: 1px;
+}
+
+/* link hover effects */
+
+.li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  opacity: 0.7;
+  background: -webkit-linear-gradient(left , powderblue , white);
+  transition: 0.3s;
+}
+.li:hover::after{
+  width:120%;
+  transition: width .4s;
+  color: rgb(22, 235, 171);
+}
+
+/* input field */
+
+input{
+  height:30px;opacity:.5;
+  border-style:none ;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the footer */
+.footer {
+  background-color:black;
+  padding: 10px;
+  color:white;
+  text-align: center;
 }
