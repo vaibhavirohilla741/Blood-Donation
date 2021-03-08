@@ -1,92 +1,111 @@
-  body{
-    background-color: burlywood;
-    
-    font-family: 'Alegreya Sans SC';
+body{
+  background:black;
+  font-family: sourse Sans pro;
 }
-  .navbar
-  {
-      /*position: fixed;*/
-      margin: 0px;
-      padding: 0px;
-      width: 100%;
-      overflow: hidden;
-      background-color:black;
+.navbar
+{
+    /*position: fixed;*/
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow: hidden;
+    /* background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center; */
+    border-radius: 10px;
 
-  }
-  .symbole 
-  {
-      font-size: 30px;
-      font-weight: bolder;
-      color:white;
-  }
-  .navbar-style
-  {
-      
-      padding: 1%;
-      
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width:100%;
-      color:white;
-  }
-  .input-field{
-      
-      position:absolute;
-      left: 25%;
-      font-size: larger;
-      border-radius: 5px;
-      border-style: none;
-      width: 40%;
-    
-  }
-   a
-  {
-      
-      
-      font-size: 20px;
-      font-weight: bolder;
-      text-decoration: none;
-      display: inline-block;
-      margin-left: 15px;
-      margin-right: 18px;
-      color:white;
-      
-      font-weight: 1px;
-  }
-.row {
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Create three unequal columns that sits next to each other */
-  .column {
-    padding: 10px;
-    height: 600px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Left and right column */
-  .column.side {
-     -webkit-flex: 1;
-     -ms-flex: 1;
-     flex: 1;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color:black;
-    padding: 10px;
+}
+
+.symbole 
+{
+    font-size: 30px;
+    font-weight: bolder;
     color:white;
-    text-align: center;
-  }
+}
+.navbar-style
+{
+    
+    padding: 1%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:white;
+}
+.input-field{
+    
+    position:absolute;
+    left: 25%;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: none;
+    width: 40%;
   
-  
+}
+/* link styling */
+ a
+{
+    font-size: 20px;
+    /* font-weight: bolder; */
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+    color:white;
+    font-weight: 1px;
+}
 
+/* link hover effects */
 
+.li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  opacity: 0.7;
+  background: -webkit-linear-gradient(left , powderblue , white);
+  transition: 0.3s;
+}
+.li:hover::after{
+  width:120%;
+  transition: width .4s;
+  color: rgb(22, 235, 171);
+}
+
+/* input field */
+
+input{
+  height:30px;opacity:.5;
+  border-style:none ;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+  padding: 10px;
+  height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the footer */
+.footer {
+  background-color:black;
+  padding: 10px;
+  color:white;
+  text-align: center;
+}
