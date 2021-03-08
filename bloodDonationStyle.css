@@ -1,5 +1,5 @@
 body{
-  background:black;
+  background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center;
   font-family: sourse Sans pro;
 }
 .navbar
@@ -8,8 +8,9 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    height: 10vh;
     overflow: hidden;
-    /* background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center; */
+    background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center;
     border-radius: 10px;
 
 }
@@ -35,10 +36,12 @@ body{
     
     position:absolute;
     left: 25%;
+    font-family: source sans pro;
     font-size: larger;
     border-radius: 5px;
     border-style: none;
     width: 40%;
+    outline: 0;;
   
 }
 /* link styling */
@@ -71,11 +74,17 @@ body{
   color: rgb(22, 235, 171);
 }
 
+.more a{
+  color: rgb(9, 43, 59);
+}
+
 /* input field */
 
 input{
   height:30px;opacity:.5;
   border-style:none ;
+   
+  
 }
 .row {
   display: -webkit-flex;
@@ -108,4 +117,52 @@ input{
   padding: 10px;
   color:white;
   text-align: center;
+}
+
+.home-page{
+  border: 1px solid black;
+}
+.find-blood{
+  border: 1px solid black;
+
+}
+.blood{
+  border: 1px solid black;
+  margin-left: -10px;
+}
+
+/* remember circle? */
+
+.circle{
+  margin: 100px 0px 0px 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 25%;
+  height: 24vh;
+  border-radius: 360px;
+  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  opacity: 0.5;
+  text-align: center; 
+}
+.circle-2{
+  margin: -180px 0px 0px 210px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 25%;
+  height: 24vh;
+  border-radius: 360px;
+  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  opacity: 0.5;
+  text-align: center; 
+}
+.circle-3{
+  margin: -50px 0px 0px 120px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 25%;
+  height: 24vh;
+  border-radius: 360px;
+  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  opacity: 0.5;
+  text-align: center; 
 }
