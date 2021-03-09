@@ -109,37 +109,41 @@ input{
   -ms-flex: 2;
   flex: 2;
 }
-th{
-  font-size: 25px;
-    font-weight: bolder;
-    color:white;
-    text-align: center;
-}
 
 td{
   font-size: 15px;
-  color: rgb(231, 171, 171);
+  color: white;
   text-align: center;
   top: -3px;
-  
+  opacity: 0.7;
 
 }
-table{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-collapse: separate;
-    border-spacing: 0 1em;
+td:hover{
+ 
+  opacity: 0.9;
+
 }
-/* Style the footer */
+
+table{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    left:7%;
+    border-spacing: 0 1em;
+    border-collapse: collapse;
+    border:hidden;
+    height: 90%;
+    box-sizing: border-box;
+  box-shadow: 0 15px 25px black;
+  border-radius: 10px;
+}
+
 .footer {
   background-color:black;
   padding: 10px;
   color:white;
   text-align: center;
 }
-
-
-/* input field */
 
 input{
   height:30px;opacity:.5;
@@ -149,11 +153,6 @@ input{
   display: -webkit-flex;
   display: flex;
 }
-
-
-
-/*  */
-
 
 .circle{
   margin: 50px 0px 0px 120px;
@@ -218,22 +217,14 @@ input{
   box-shadow: 2px 2px 2px 2px #fff;
 }
 
+ 
 
-/*  */
-
-
-.donate-button , .join-button , .cause-button{
-  border-radius: 5px;
-  transition: 0.5s;
-  opacity: 0.7;
-}
-.donate-button:hover ,.join-button:hover , .cause-button:hover{
+.button:hover{
     transform: scale(1.2);
-    opacity: 0.9;
+    border-radius: 5px;
+    transition: 0.5s;
+    
 }
-
-/* Style the footer */
-
 
 .footer {
   background-color:black;
@@ -242,33 +233,29 @@ input{
   text-align: center;
 }
 .button {
-  background-color: rgb(67, 201, 67);
+  display: block;
+  position: relative;
+  width: 65%;
   border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: #4CAF50;
+  padding: 14px 28px;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
-  border-color: white;
+  text-align: center;
+  left: 6%;
 }
-.home-page{
+.home-page,.find-blood{
   border:  blue;
 }
-.find-blood{
-  border:  blue;
 
-}
+
 .blood{
   border:  blue;
   margin-left: -10px;
 }
 
 .login-box {
-  
-  
+ 
   width: 400px;
   position:absolute;
   bottom: -30px;
@@ -276,9 +263,9 @@ input{
   bottom: 20px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(15, 122, 221, 0.5);;
+  background: rgba(15, 122, 221, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  box-shadow: 0 15px 25px black;
   border-radius: 10px;
 }
 
@@ -348,5 +335,3 @@ input{
   position: absolute;
   display: block;
 }
-
-
