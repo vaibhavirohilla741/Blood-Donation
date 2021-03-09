@@ -5,6 +5,8 @@ body{
   background-image: url(background.jpg);
   background-size: contain;
 }
+
+/* navbar styling  */
 .navbar
 {
     /*position: fixed;*/
@@ -12,7 +14,7 @@ body{
     padding: 0px;
     width: 100%;
     overflow: hidden;
-    /* background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center; */
+    background:url(background.jpg) no-repeat center;
     border-radius: 10px;
 
 }
@@ -45,11 +47,11 @@ body{
     width: 40%;
   
 }
+
 /* link styling */
  a
 {
     font-size: 20px;
-    /* font-weight: bolder; */
     text-decoration: none;
     display: inline-block;
     margin-left: 15px;
@@ -98,10 +100,7 @@ input{
 .column.side {
    -webkit-flex: 1;
    -ms-flex: 1;
-   flex: 1;
-   
-  
-   
+   flex: 1; 
 }
 
 /* Middle column */
@@ -109,51 +108,14 @@ input{
   -webkit-flex: 2;
   -ms-flex: 2;
   flex: 2;
-  
- 
 }
 th{
   font-size: 25px;
     font-weight: bolder;
     color:white;
     text-align: center;
-    
+}
 
-
-}
-.circle{
-  margin: 100px 0px 0px 50px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
-.circle-2{
-  margin: -180px 0px 0px 210px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
-.circle-3{
-  margin: -50px 0px 0px 120px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
 td{
   font-size: 15px;
   color: rgb(231, 171, 171);
@@ -177,77 +139,6 @@ table{
 }
 
 
-.navbar
-{
-    /*position: fixed;*/
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    overflow: hidden;
-    background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center;
-    border-radius: 10px;
-
-}
-
-.symbole 
-{
-    font-size: 30px;
-    font-weight: bolder;
-    color:white;
-    
-}
-.navbar-style
-{
-    
-    padding: 1%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    color:white;
-}
-.input-field{
-    
-    position:absolute;
-    left: 25%;
-    font-size: larger;
-    border-radius: 5px;
-    border-style: none;
-    width: 40%;
-  
-}
-/* link styling */
- a
-{
-    font-size: 20px;
-    /* font-weight: bolder; */
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 18px;
-    color:white;
-    font-weight: 1px;
-}
-
-
-/* link hover effects */
-
-.li::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  opacity: 0.7;
-  background: -webkit-linear-gradient(left , powderblue , white);
-  transition: 0.3s;
-}
-.li:hover::after{
-  width:120%;
-  transition: width .4s;
-  color: rgb(22, 235, 171);
-}
-
 /* input field */
 
 input{
@@ -259,40 +150,7 @@ input{
   display: flex;
 }
 
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
-  
-}
 
-/* Left and right column */
-.column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-   
-  
-   
-}
-
-/* Middle column */
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  
- 
-}
-th{
-  font-size: 25px;
-    font-weight: bolder;
-    color:white;
-    text-align: center;
-    
-
-
-}
 
 /*  */
 
@@ -363,20 +221,6 @@ th{
 
 /*  */
 
-td{
-  font-size: 15px;
-  color: rgb(231, 171, 171);
-  text-align: center;
-  top: -3px;
-  
-
-}
-table{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-collapse: separate;
-    border-spacing: 0 1em;
-}
 
 .donate-button , .join-button , .cause-button{
   border-radius: 5px;
@@ -387,7 +231,6 @@ table{
     transform: scale(1.2);
     opacity: 0.9;
 }
-
 
 /* Style the footer */
 
@@ -496,7 +339,6 @@ table{
 
 .login-box a:hover {
   border-color:rgb(33, 124, 167) ;
-  border: 3px solid;
   color: #fff;
   border-radius: 5px;
  
@@ -507,74 +349,4 @@ table{
   display: block;
 }
 
-.login-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  
-}
 
-@keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%,100% {
-    left: 100%;
-  }
-}
-
-.login-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background:rgb(75, 214, 75) 
-  
-}
-
-@keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%,100% {
-    top: 100%;
-  }
-}
-
-.login-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: rgb(75, 214, 75)
-  
-}
-
-@keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%,100% {
-    right: 100%;
-  }
-}
-
-.login-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  
-}
-
-@keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,100% {
-    bottom: 100%;
-  }
-}
