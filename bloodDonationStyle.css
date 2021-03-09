@@ -1,200 +1,259 @@
 body{
   
-  font-family: sourse Sans pro;
-  background-image: url(background.jpg);
-  background-size: contain;
-}
-.navbar
-{
-    /*position: fixed;*/
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    overflow: hidden;
-    /* background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center; */
-    border-radius: 10px;
-
-}
-
-.symbole 
-{
-    font-size: 30px;
-    font-weight: bolder;
-    color:white;
+    font-family: sourse Sans pro;
+    background-image: url(boat-sailor-moon-night-minimal-8k-qr1.jpg);
+    background-size: contain;
+  }
+  .navbar
+  {
+      /*position: fixed;*/
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      overflow: hidden;
+      background:url(boat-sailor-moon-night-minimal-8k-qr1.jpg) no-repeat center;
+      border-radius: 10px;
+  
+  }
+  
+  .symbole 
+  {
+      font-size: 30px;
+      font-weight: bolder;
+      color:white;
+      
+  }
+  .navbar-style
+  {
+      
+      padding: 1%;
+      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width:100%;
+      color:white;
+  }
+  .input-field{
+      
+      position:absolute;
+      left: 25%;
+      font-size: larger;
+      border-radius: 5px;
+      border-style: none;
+      width: 40%;
     
-}
-.navbar-style
-{
-    
-    padding: 1%;
-    
+  }
+  /* link styling */
+   a
+  {
+      font-size: 20px;
+      /* font-weight: bolder; */
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 15px;
+      margin-right: 18px;
+      color:white;
+      font-weight: 1px;
+  }
+  
+  
+  /* link hover effects */
+  
+  .li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    opacity: 0.7;
+    background: -webkit-linear-gradient(left , powderblue , white);
+    transition: 0.3s;
+  }
+  .li:hover::after{
+    width:120%;
+    transition: width .4s;
+    color: rgb(22, 235, 171);
+  }
+  
+  /* input field */
+  
+  input{
+    height:30px;opacity:.5;
+    border-style:none ;
+  }
+  .row {
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    color:white;
-}
-.input-field{
+  }
+  
+  /* Create three unequal columns that sits next to each other */
+  .column {
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
     
-    position:absolute;
-    left: 25%;
-    font-size: larger;
+  }
+  
+  /* Left and right column */
+  .column.side {
+     -webkit-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+     
+    
+     
+  }
+  
+  /* Middle column */
+  .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    
+   
+  }
+  th{
+    font-size: 25px;
+      font-weight: bolder;
+      color:white;
+      text-align: center;
+      
+  
+  
+  }
+
+  /*  */
+
+
+  .circle{
+    margin: 50px 0px 0px 120px;
+    display: flex;
+    border: 1px solid rgb(11, 132, 212);
+    cursor: pointer;
+    width: 25%;
+    height: 24vh;
+    border-radius: 360px;
+    background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+    opacity: 0.5;
+    text-align: center; 
+    transition: .5s;
+  }
+  .circle h1{
+    margin: 50px 0px 0px 0px;
+  }
+  .circle:hover{
+      transform: scale(1.3);
+      box-shadow: 2px 2px 2px 2px #fff;
+
+  }
+  .circle-2{
+    margin: -180px 0px 0px 280px;
+    border: 1px solid rgb(11, 132, 212);
+    cursor: pointer;
+    width: 25%;
+    height: 24vh;
+    border-radius: 360px;
+    background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+    opacity: 0.5;
+    text-align: center; 
+    transition: .5s;
+  }
+  .circle-2 h1{
+    margin: 50px 0px 0px 10px;
+  }
+  .circle-2:hover{
+    transform: scale(1.3);
+    box-shadow: 2px 2px 2px 2px #fff;
+
+}
+  .circle-3{
+    margin: -50px 0px 0px 190px;
+    border: 1px solid rgb(11, 132, 212);
+    cursor: pointer;
+    width: 25%;
+    height: 24vh;
+    border-radius: 360px;
+    background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+    opacity: 0.5;
+    text-align: center; 
+    transition: .5s;
+  }
+  
+  .circle-3 h1{
+    margin: 70px 0px 0px 10px;
+  }
+
+  .circle-3:hover{
+    transform: scale(1.3);
+    box-shadow: 2px 2px 2px 2px #fff;
+}
+
+
+  /*  */
+
+  td{
+    font-size: 15px;
+    color: rgb(231, 171, 171);
+    text-align: center;
+    top: -3px;
+    
+  
+  }
+  table{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-collapse: separate;
+      border-spacing: 0 1em;
+  }
+
+.donate-button , .join-button , .cause-button{
     border-radius: 5px;
-    border-style: none;
-    width: 40%;
-  
-}
-/* link styling */
- a
-{
-    font-size: 20px;
-    /* font-weight: bolder; */
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 18px;
-    color:white;
-    font-weight: 1px;
-}
+    transition: 0.5s;
+    opacity: 0.7;
+  }
+  .donate-button:hover ,.join-button:hover , .cause-button:hover{
+      transform: scale(1.2);
+      opacity: 0.9;
+  }
 
 
-/* link hover effects */
+  /* Style the footer */
 
-.li::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  opacity: 0.7;
-  background: -webkit-linear-gradient(left , powderblue , white);
-  transition: 0.3s;
-}
-.li:hover::after{
-  width:120%;
-  transition: width .4s;
-  color: rgb(22, 235, 171);
-}
 
-/* input field */
-
-input{
-  height:30px;opacity:.5;
-  border-style:none ;
-}
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
-  
-}
-
-/* Left and right column */
-.column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-   
-  
-   
-}
-
-/* Middle column */
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-  
- 
-}
-th{
-  font-size: 25px;
-    font-weight: bolder;
+  .footer {
+    background-color:black;
+    padding: 10px;
     color:white;
     text-align: center;
-    
+  }
+  .button {
+    background-color: #4a572c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-color: white;
+  }
+  .home-page{
+    border:  blue;
+  }
+  .find-blood{
+    border:  blue;
+  
+  }
+  .blood{
+    border:  blue;
+    margin-left: -10px;
+  }
 
 
-}
-.circle{
-  margin: 100px 0px 0px 50px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
-.circle-2{
-  margin: -180px 0px 0px 210px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
-.circle-3{
-  margin: -50px 0px 0px 120px;
-  border: 1px solid black;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
-  opacity: 0.5;
-  text-align: center; 
-}
-td{
-  font-size: 15px;
-  color: rgb(231, 171, 171);
-  text-align: center;
-  top: -3px;
+  /*  */
+
   
 
-}
-table{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-collapse: separate;
-    border-spacing: 0 1em;
-}
-/* Style the footer */
-.footer {
-  background-color:black;
-  padding: 10px;
-  color:white;
-  text-align: center;
-}
-.button {
-  background-color: #4a572c;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-color: white;
-}
-.home-page{
-  border:  blue;
-}
-.find-blood{
-  border:  blue;
 
-}
-.blood{
-  border:  blue;
-  margin-left: -10px;
-}
+  
