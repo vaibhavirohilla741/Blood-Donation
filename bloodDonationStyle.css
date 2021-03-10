@@ -9,12 +9,13 @@ body{
 /* navbar styling  */
 .navbar
 {
-    /*position: fixed;*/
+    position: fixed;
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: 99%;
     overflow: hidden;
-    background:url(background.jpg) no-repeat center;
+    /* background:url(background.jpg) no-repeat center; */
+    background: transparent;
     border-radius: 10px;
 
 }
@@ -93,6 +94,7 @@ input{
 .column {
   padding: 10px;
   height: 600px; /* Should be removed. Only for demonstration */
+  margin-top: 65px;
   
 }
 
@@ -143,15 +145,6 @@ table{
   padding: 10px;
   color:white;
   text-align: center;
-}
-
-input{
-  height:30px;opacity:.5;
-  border-style:none ;
-}
-.row {
-  display: -webkit-flex;
-  display: flex;
 }
 
 .circle{
