@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="request-blood.css">
-    <title>Request for Blood</title>
-</head>
-<body>
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div class="container">
-        <form action="action_page.php">
-            
-            <h2 style="color:rgb(78, 68, 68);">Patient Details</h2>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          
-      
-          <input type="submit" value="Submit">
-      
-        </form>
+    
+    <link rel="stylesheet" href="request-blood.css">
+</head>
+
+
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar" >
+      <div class="navbar-style">
+        <link rel = "icon" href =  
+"https://img.icons8.com/color/48/000000/drop-of-blood.png" 
+      type = "image/x-icon"> 
+          <div class="symbole"><img src="https://img.icons8.com/color/48/000000/drop-of-blood.png"/>Blood Donation</div>
+          <section>
+              <input type="text" placeholder=" search nearest blood bank" class="input-field">
+              <a href="" class="li">Home</a>
+              <a href="" class="li">About</a>
+              <a href="" class="li">Donate</a>
+              <a href="" class="li">Register</a>
+              <a href="" class="li">Contact</a>
+              <a href="" class="li"><i class="fa fa-bars"></i></a>
+          </section>
       </div>
+  </nav>
+
+
+      
+    
+      <div class = "container">
+        <form>
+        <br><br><br>
+            <h1 class = "formHeading">Patient Details</h1>
+            <label for="username">Patient Name</label>
+            <input type = "text" name = "username" id = "username"placeholder = "Enter Username" required = "required"><br>
+            <label for="docname">Doctor Name</label>
+            <input type = "text" name = "docname" id  = "docname" placeholder = "Doctor Name" required = "required"><br>
+            
+            <label for="blood-gp">Blood Group</label>
+            <select id="blood-gp" name="blood-gp">
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="O+">O+</option>
+              <option value="Ab+">AB+</option>><br>
+            </select><br>
+
+            <label for="state">State</label>
+            <select id="state" name="state">
+              <option value="maharastra">Maharashtra</option>
+              <option value="delhi">Delhi</option>
+              <option value="assam">Assam</option>
+              <option value="karnataka">Karanataka</option>>
+            </select><br>
+
+            <label for="district">District</label>
+            <select id="district" name="District">
+              <option value="nagpur">Nagpur</option>
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="latur">Latur</option>>
+            </select><br>
+
+            <label for="address">Hosipital Name & Address</label>
+            <textarea id="address" name="address" rows="4" cols="50">
+              </textarea>
+            <br><br>
+      
+            
+              <button class="button" type = "submit" >Find Blood</button>
+            
+            
+            
+        </form>
+
+    </div>
     
 </body>
 </html>
