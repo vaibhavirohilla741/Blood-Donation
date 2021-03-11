@@ -1,0 +1,47 @@
+
+/* Donate_Page (donate) */
+/* Mnoj........ */
+.donate_page{
+    border: 1px solid black;
+    /* max-width: 1600px; */
+    height: 100vh;
+  
+    background-size: cover;
+  }
+  .login-info{
+    border: 1px solid black;
+    bottom: -30px;
+    padding: 40px;
+    background: rgba(214, 69, 50, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+  }
+  .donor-info{
+    border: 1px solid black;
+    bottom: -30px;
+    padding: 40px;
+    background: rgba(214, 69, 50, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+  
+  }
+  .contact-info{
+    border: 1px solid black;
+    bottom: -30px;
+    padding: 40px;
+    background: rgba(214, 69, 50, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+  
+  }
+  .grid-item1{
+    grid-column: 1/4;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
+  
