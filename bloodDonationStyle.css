@@ -1,382 +1,164 @@
-body{
-  
-  font-family: sourse Sans pro;
-  background: powderblue;
-  background-size: cover;
-}
-
-/* navbar styling  */
-.navbar
-{
-    position: fixed;
-    margin: 0px;
-    padding: 0px;
-    width: 99%;
-    overflow: hidden;   
-    border-radius: 10px;
-    background: rgb(56, 55, 55);
-    box-align: center;
-
-}
-
-.symbole 
-{
-    font-size: 30px;
-    font-weight: bolder;
-    color:white;
-    padding-bottom:1%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-}
-.navbar-style
-{
+    <link rel="stylesheet" href="bloodDonationStyle.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar" >
+        <div class="navbar-style">
+          <link rel = "icon" href =  
+"https://img.icons8.com/color/48/000000/drop-of-blood.png" 
+        type = "image/x-icon"> 
+            <div class="symbole"><img src="https://img.icons8.com/color/48/000000/drop-of-blood.png"/>Blood Donation</div>
+            <section class="more">
+                <input type="text" placeholder=" search nearest blood bank" class="input-field">
+                <a href="" class="li">Home</a>
+                <a href="" class="li">About</a>
+                <a href="" class="li">Donate</a>
+                <a href="" class="li">Register</a>
+                <a href="" class="li">Contact</a>
+                <a href="" class="li"><i class="fa fa-bars"></i></a>
+            </section>
+        </div>
+    </nav>
+
+    <!-- Home page  -->
+
     
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    color:white;
-}
-.input-field{
-    
-    position:absolute;
-    left: 25%;
-    font-family: sourse Sans pro;
-    font-size: larger;
-    border-radius: 5px;
-    border-style: none;
-    width: 40%;
+    <div class="row">
+        <div class="column side">
+            <table  >
+                
+                  <tr>
+                      
+                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>DONATIONS <br /></h2>
+                      We are grateful for Our Real Hero and hope for them always success who helps Donate to Blood Bank<br />
+                      <br>
+                      <a href="#Donate" class="button">DONATE</a></td>
+                    
+                  </tr>
   
-}
+                  <tr>
+                    
+                      
+                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>VOLUNTEER  <br /></h2>
+                      You will become a vital part of the biggest Bool Donation organization Blood bank today in the world <br />
+                      <br>
+                      <a href="#" class="button">JOIN NOW</a></td>
+                    
+                  </tr>
+                  
+                  <tr>
+                      
+                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>CAUSES  <br /></h2>
+                      Blood Bank today receive ecent causes to Fundraising for Charitable. We need your help<br />
+                      <br>
+                      <a href="#" class="button">CAUSES</a></td>
+                      <br>
+                    
+                  </tr>
+                  
+                </table>
+            
 
-/* link styling */
- a
-{
-    font-size: 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 18px;
-    color:white;
-    font-weight: 1px;
-}
+        </div> 
+        
+   
+        <div class="column middle">
+            <a href="#RequestBlood"><div class="circle"> <h1>Request Blood</h1></div></a>
+            <div class="circle-2"> <h1>Find Blood Donor</h1></div>
+            <div class="circle-3"> <h1>Blood Bank</h1></div>
+        
+        </div>
 
+    <div class="column side">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                    <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </a>
+            </form>
+        </div>
+    </div>
 
-/* link hover effects */
+  </div>
+  <div class="footer">
+    <p>Footer</p>
+  </div>
 
-.li::after{
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  opacity: 0.7;
-  background: -webkit-linear-gradient(left , rgb(193, 191, 212) , rgb(196, 89, 63));
-  transition: 0.3s;
-}
-.li:hover::after{
-  width:110%;
-  transition: width .4s;
-  color: rgb(224, 189, 185);
-}
-
-/* input field */
-
-input{
-  height:30px;
-  opacity:.5;
-  /* border-style:none; */
-}
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
-  margin-top: 65px;
-  
-}
-
-/* Left and right column */
-.column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1; 
-}
-
-/* Middle column */
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-}
-
-td{
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  top: -3px;
-  opacity: 0.7;
-
-}
-td:hover{
- 
-  opacity: 0.9;
-
-}
-
-table{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    position: relative;
-    left:7%;
-    border-spacing: 0 1em;
-    border-collapse: collapse;
-    border:hidden;
-    height: 90%;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
-}
+  <!-- starting with page 2 -->
 
 
-.circle{
-  margin: 50px 0px 0px 120px;
-  display: flex;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 50%;
-  height: 24vh;
-  background: -webkit-linear-gradient(left ,rgb(252, 53, 53),rgb(252, 53, 53));
-  opacity: 0.5;
-  text-align: center; 
-  transition: .5s;
-}
-.circle h1{
-  margin: 50px 0px 0px 0px;
-}
-.circle:hover{
-    transform: scale(1.3);
-    box-shadow: 0 15px 25px black;
-    opacity: 0.9;
+  <section class="donate_page" id="Donate">
+      <div class="max-width">
 
-}
-.circle-2{
-  margin: -180px 0px 0px 280px;
-  
-  display: flex;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  background: -webkit-linear-gradient(left ,rgb(252, 53, 53),rgb(252, 53, 53));
-  opacity: 0.5;
-  text-align: center; 
-  transition: .5s;
-}
-.circle-2 h1{
-  margin: 50px 0px 0px 10px;
-  
-}
-.circle-2:hover{
-  transform: scale(1.3);
-  box-shadow: 0 15px 25px black;
-  opacity: 0.9;
+        
+      </div>
+      <P><h1>starting with page 2 !</h1></P>
+      <div class="donate-box">
+        <h2>Login Informayion</h2>
+        <form>
+            <div class="login-info">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <label></label>
+            </div>
+            <div class="donor-info">
+                <input type="text" name="" required="" class="grid-item1 grid">
+                <input type="text" name="" required="" class="grid-item2 grid">
+                <input type="text" name="" required="" class="grid-item3 grid">
+                <input type="text" name="" required="" class="grid-item4 grid">
+                <input type="text" name="" required="" class="grid-item5 grid">
+                <input type="text" name="" required="" class="grid-item6 grid">
+                <input type="text" name="" required="" class="grid-item7 grid">
+                <input type="text" name="" required="" class="grid-item8 grid">
+                <input type="text" name="" required="" class="grid-item9 grid">
+                <label></label> 
+            </div>
+            <div class="contact-info">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <input type="text" name="" required="">
+                <label></label>
+            </div>
 
-}
-.circle-3{
-  margin: -20px 20px 0px 140px;
-  display: flex;
-  border-radius: 50%;
-  position: relative;
-  left: 10%;
-  bottom: 3%;
-  cursor: pointer;
-  width: 25%;
-  height: 24vh;
-  background: -webkit-linear-gradient(left ,rgb(252, 53, 53),rgb(252, 53, 53));
-  opacity: 0.5;
-  text-align: center; 
-  transition: .5s;
-}
+        </form>
+    </div>
 
-.circle-3 h1{
-  margin: 70px 0px 0px 10px;
-  color:  white;
-  
-  
-}
+  </section>
 
-.circle-3:hover{
-  transform: scale(1.3);
-  box-shadow: 0 15px 25px black;
-  opacity: 0.9;
-
-}
-
- 
-
-.button1:hover{
-    transform: scale(1.2);
-    border-radius: 5px;
-    transition: 0.5s;
-    
-}
-
-.footer {
-  background:black;
-  padding: 2px;
-  color:white;
-  text-align: center;
-  border-radius: 10px;
-}
-.button {
-  display: block;
-  position: relative;
-  width: 65%;
-  border: none;
-  /* background-color: #bb290f; */
-  background: green;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  left: 6%;
-}
-.home-page,.find-blood{
-  border:  blue;
-}
-
-
-.blood{
-  border:  blue;
-  margin-left: -10px;
-}
-
-.login-box {
- 
-  width: 400px;
-  position:absolute;
-  bottom: -30px;
-  left: 1230px;
-  bottom: 20px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background:palevioletred;
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px black;
-  border-radius: 10px;
-}
-
-.login-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.login-box .user-box {
-  position: relative;
-}
-
-.login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-.login-box .user-box label {
-  position: absolute;
-  top:0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: .5s;
-}
-
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
-
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
-}
-
-.login-box a:hover {
-  border-color:rgb(33, 124, 167) ;
-  color: #fff;
-  border-radius: 5px;
- 
-}
-
-.login-box a span {
-  position: absolute;
-  display: block;
-}
-
-
-/* page 2 (donate) */
-
-.donate-page{
-  border: 1px solid black;
-  /* max-width: 1600px; */
-  height: 100vh;
-}
-.login-info{
-  border: 1px solid black;
-  bottom: -30px;
-  padding: 40px;
-  background: rgba(214, 69, 50, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px black;
-  border-radius: 10px;
-}
-.donor-info{
-  border: 1px solid black;
-  bottom: -30px;
-  padding: 40px;
-  background: rgba(214, 69, 50, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px black;
-  border-radius: 10px;
-  display: grid;
-  /* grid-template-columns: 3fr 3fr; */
-  grid-column: 3/4;
-
-}
-.contact-info{
-  border: 1px solid black;
-  bottom: -30px;
-  padding: 40px;
-  background: rgba(214, 69, 50, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px black;
-  border-radius: 10px;
-
-}
-.grid-item1{
-  grid-column: 1/4;
-}
+  <!-- Vaibhavi ka page -->
+    <section class="request-blood" id="RequestBlood">
+        <div>
+            <h1>Priye..... ye raha aapka khaali page</h1>
+        </div>
+    </section>            
+</body>
+</html>
