@@ -1,7 +1,7 @@
 body{
   
   font-family: sourse Sans pro;
-  background: rgb(146, 142, 142);
+  background: rgb(248, 242, 242);
   /* background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ; */
   background-size: cover;
   width: 100%;
@@ -101,7 +101,8 @@ input{
   text-align: center;
   margin-top: 90px;
   font-size: 50px;
-  color: white;
+  
+  color:black;
 }
 
 .login-info{
@@ -109,7 +110,8 @@ input{
   margin-top:30px;
   width: 250px;
   font-size: 30px;
-  color: white;
+  color:black;
+  
 }
 .firstname{
   position: relative;
@@ -119,6 +121,8 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 }
 .lastname{
@@ -129,6 +133,8 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 }
 .contact {
@@ -139,6 +145,8 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 }
 .email{
   position: relative;
@@ -148,13 +156,15 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 }
 
 .donor-info{
   margin-top: 10%;
   margin-left:25px;
   font-size: 30px;
-  color: white;
+  color:black;
 }
 .blood-group{
   position: relative;
@@ -164,11 +174,15 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 
 }
 .gender , .sms{
   position: relative;
+  
+  box-shadow: 2px 2px grey;
   left:170px;
   top:5px;
   height: 5vh;
@@ -184,6 +198,8 @@ input{
   width: 17%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 }
 .birth-date{
@@ -194,6 +210,8 @@ input{
   width: 12%;
   border-radius: 5px;
   font-size: large;
+ 
+  box-shadow: 2px 2px grey;
 }
 
 .month{
@@ -204,6 +222,8 @@ input{
   width: 12%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 }
 .year{
@@ -214,6 +234,8 @@ input{
   width: 12%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 }
  
 .contact-info{
@@ -221,7 +243,8 @@ input{
   margin-top: 10%;
   margin-left: 25px;
   font-size: 30px;
-  color: white;
+  color:black;
+  
 }
 .contact-{
   position: relative;
@@ -229,12 +252,15 @@ input{
   width: 12%;
   border-radius: 5px;
   font-size: large;
+  
+  box-shadow: 2px 2px grey;
 
 }
 
 .show-mobile{
   left:80px;
   top:5px;
+  box-shadow: 2px 2px grey;
 
 }
 
