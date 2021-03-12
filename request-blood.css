@@ -2,11 +2,10 @@ body{
   
   font-family: sourse Sans pro;
   background: black;
-  /* background-image: url(pexels-paul-cameron-1187974.jpg); */
-  background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ;
+  background: rgb(248, 242, 242);
   background-size: cover;
   width: 100%;
-  background-color: rgb(247, 242, 242);
+  
 }
 
 /* navbar styling  */
@@ -18,15 +17,9 @@ body{
     width: 99%;
     overflow: hidden;
     /* background:url(background.jpg) no-repeat center; */
-    background-color:rgb(29, 10, 10);;
+    background-color: rgb(65, 132, 158);
     border-radius: 10px;
 
-}
-.footer {
-  background-color:rgb(29, 10, 10);;
-  padding: 10px;
-  color:white;
-  text-align: center;
 }
 
 .symbole 
@@ -46,15 +39,15 @@ body{
     width:100%;
     color:white;
 }
-.input-field{
+.input-field1{
     
     position:absolute;
-    left: 15%;
+    left: 25%;
     font-family: sourse Sans pro;
     font-size: larger;
     border-radius: 5px;
     border-style: none;
-    width: 0%;
+    width: 40%;
   
 }
 
@@ -95,6 +88,7 @@ input{
   opacity:.5;
   /* border-style:none; */
 }
+
 
 .container{
 justify-content: center;
