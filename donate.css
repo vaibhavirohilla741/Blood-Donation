@@ -1,47 +1,271 @@
+body{
+  
+  font-family: sourse Sans pro;
+  background: rgb(146, 142, 142);
+  /* background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ; */
+  background-size: cover;
+  width: 100%;
+}
 
-/* Donate_Page (donate) */
-/* Mnoj........ */
-.donate_page{
-    border: 1px solid black;
-    /* max-width: 1600px; */
-    height: 100vh;
+/* navbar styling  */
+.navbar
+{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    overflow: hidden;
+    background: rgb(65, 132, 158);
+    border-radius: 1px;
+
+}
+
+.symbole 
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+    
+}
+.navbar-style
+{
+    
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:white;
+}
+.input-field{
+    
+    position:absolute;
+    left: 25%;
+    font-family: sourse Sans pro;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: none;
+    width: 40%;
   
-    background-size: cover;
-  }
-  .login-info{
-    border: 1px solid black;
-    bottom: -30px;
-    padding: 40px;
-    background: rgba(214, 69, 50, 0.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
-  }
-  .donor-info{
-    border: 1px solid black;
-    bottom: -30px;
-    padding: 40px;
-    background: rgba(214, 69, 50, 0.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
-  
-  }
-  .contact-info{
-    border: 1px solid black;
-    bottom: -30px;
-    padding: 40px;
-    background: rgba(214, 69, 50, 0.5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
-  
-  }
-  .grid-item1{
-    grid-column: 1/4;
-  }
-  a{
+}
+
+/* link styling */
+ .li
+{
+    font-size: 20px;
     text-decoration: none;
-    color:black;
-  }
-  
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+    color:white;
+    font-weight: 1px;
+}
+
+
+/* link hover effects */
+
+.li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  opacity: 0.7;
+  background: -webkit-linear-gradient(left , rgb(193, 191, 212) , rgb(196, 89, 63));
+  transition: 0.3s;
+}
+.li:hover::after{
+  width:110%;
+  transition: width .4s;
+  color: rgb(224, 189, 185);
+}
+
+/* input field */
+
+input{
+  height:30px;
+  opacity:.5;
+  border-style:none;
+}
+
+
+/* donate page */
+
+ 
+.donate-page{
+  font-family: sourse Sans pro;
+  margin-top: 10px;
+  height: 130vh;
+}
+
+.donate-page h1{
+  text-align: center;
+  margin-top: 90px;
+  font-size: 50px;
+  color: white;
+}
+
+.login-info{
+  margin-left:25px;
+  margin-top:30px;
+  width: 250px;
+  font-size: 30px;
+  color: white;
+}
+.firstname{
+  position: relative;
+  left:80px;
+  top:8px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+.lastname{
+  position: relative;
+  left:170px;
+  top:8px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+.contact {
+  position: relative;
+  left:-450px;
+  top:75px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+}
+.email{
+  position: relative;
+  left:-360px;
+  top:75px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.donor-info{
+  margin-top: 10%;
+  margin-left:25px;
+  font-size: 30px;
+  color: white;
+}
+.blood-group{
+  position: relative;
+  left:80px;
+  top:5px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+
+
+}
+.gender , .sms{
+  position: relative;
+  left:170px;
+  top:5px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+}
+.weight {
+  position: relative;
+  left:-300px;
+  top:5px;
+  height: 5vh;
+  width: 17%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+.birth-date{
+  position: relative;
+  left:-450px;
+  top:75px;
+  height: 5vh;
+  width: 12%;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.month{
+  position: relative;
+  left:-430px;
+  top:75px;
+  height: 5vh;
+  width: 12%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+.year{
+  position: relative;
+  left:-410px;
+  top:75px;
+  height: 5vh;
+  width: 12%;
+  border-radius: 5px;
+  font-size: large;
+}
+ 
+.contact-info{
+  position: relative;
+  margin-top: 10%;
+  margin-left: 25px;
+  font-size: 30px;
+  color: white;
+}
+.contact-{
+  position: relative;
+  height: 5vh;
+  width: 12%;
+  border-radius: 5px;
+  font-size: large;
+
+}
+
+.show-mobile{
+  left:80px;
+  top:5px;
+
+}
+
+.code{
+  left:300px;
+  top:5px;
+  height: 5vh;
+}
+.state{
+  left:-490px;
+  top:75px;
+}
+.district{
+  left:-400px;
+  top:75px;
+}
+.tehasil{
+  left:-270px;
+  top: 75px;
+
+}
+.vc{
+  position: relative;
+  left:80px;
+  top:105px;
+  width: 55%;
+
+}
+
+
+
+
+ 
+
