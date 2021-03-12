@@ -1,42 +1,138 @@
+body{
+  
+  font-family: sourse Sans pro;
+  background: black;
+  /* background-image: url(pexels-paul-cameron-1187974.jpg); */
+  background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ;
+  background-size: cover;
+  width: 100%;
+  background-color: rgb(247, 242, 242);
+}
 
-input[type=text], select {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    align-items: center;
+/* navbar styling  */
+.navbar
+{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    overflow: hidden;
+    /* background:url(background.jpg) no-repeat center; */
+    background-color:rgb(29, 10, 10);;
+    border-radius: 10px;
+
+}
+.footer {
+  background-color:rgb(29, 10, 10);;
+  padding: 10px;
+  color:white;
+  text-align: center;
+}
+
+.symbole 
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+    
+}
+.navbar-style
+{
+    
+    padding: 1%;
     display: flex;
-    justify-content: center;
-    margin-left:10% ;
-    margin-right:20% ;
-    margin-top: 10%;
-  	
-
-  }
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:white;
+}
+.input-field{
+    
+    position:absolute;
+    left: 15%;
+    font-family: sourse Sans pro;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: none;
+    width: 0%;
   
+}
+
+/* link styling */
+ .li
+{
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+    color:white;
+    font-weight: 1px;
+}
+
+
+/* link hover effects */
+
+.li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  opacity: 0.7;
+  background: -webkit-linear-gradient(left , rgb(193, 191, 212) , rgb(196, 89, 63));
+  transition: 0.3s;
+}
+.li:hover::after{
+  width:110%;
+  transition: width .4s;
+  color: rgb(224, 189, 185);
+}
+
+/* input field */
+
+input{
+  height:30px;
+  opacity:.5;
+  /* border-style:none; */
+}
+
+.container{
+justify-content: center;
+align-items: center;
+display: flex;
+width: 100vw;
+height:100vh;
+border:1px solid;
+
+
+}
+input[type=text], select,textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button {
+  display: block;
+  position: relative;
+  width: 65%;
+  border: none;
+  /* background-color: #bb290f; */
+  background: rgb(96, 189, 96);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  left: 6%;
+}
+.button:hover{
+  transform: scale(1.2);
+  border-radius: 5px;
+  transition: 0.5s;
+  
+}
+
+
