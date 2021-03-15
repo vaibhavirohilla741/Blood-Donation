@@ -1,7 +1,7 @@
 body{
   
   font-family: sourse Sans pro;
-  background: rgb(146, 142, 142);
+  background: whitesmoke;
   /* background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ; */
   background-size: cover;
   width: 100%;
@@ -15,8 +15,8 @@ body{
     padding: 0px;
     width: 99%;
     overflow: hidden;
-    background: rgb(65, 132, 158);
-    border-radius: 1px;
+    background: rgb(226, 69, 21);
+    border-radius: 10px;
 
 }
 
@@ -57,8 +57,8 @@ body{
     display: inline-block;
     margin-left: 15px;
     margin-right: 18px;
-    color:white;
-    font-weight: 1px;
+    color:black;
+    font-weight: 6px;
 }
 
 
@@ -70,7 +70,7 @@ body{
   width: 0;
   height: 2px;
   opacity: 0.7;
-  background: -webkit-linear-gradient(left , rgb(193, 191, 212) , rgb(196, 89, 63));
+  background: black;
   transition: 0.3s;
 }
 .li:hover::after{
@@ -96,12 +96,15 @@ input{
   margin-top: 10px;
   height: 130vh;
 }
+.donate-page input{
+  border:1px solid black;
+}
 
 .donate-page h1{
   text-align: center;
   margin-top: 90px;
   font-size: 50px;
-  color: white;
+  color: black;
 }
 
 .login-info{
@@ -109,7 +112,7 @@ input{
   margin-top:30px;
   width: 250px;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .firstname{
   position: relative;
@@ -118,7 +121,8 @@ input{
   height: 5vh;
   width: 17%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 20px;
 
 }
 .lastname{
@@ -127,6 +131,8 @@ input{
   top:8px;
   height: 5vh;
   width: 17%;
+  font-family: sourse Sans pro;
+  font-size: 20px;
   border-radius: 5px;
   font-size: large;
 
@@ -137,6 +143,8 @@ input{
   top:75px;
   height: 5vh;
   width: 17%;
+  font-family: sourse Sans pro;
+  font-size: 20px;
   border-radius: 5px;
   font-size: large;
 }
@@ -145,6 +153,8 @@ input{
   left:-360px;
   top:75px;
   height: 5vh;
+  font-family: sourse Sans pro;
+  font-size: 20px;
   width: 17%;
   border-radius: 5px;
   font-size: large;
@@ -154,7 +164,7 @@ input{
   margin-top: 10%;
   margin-left:25px;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .blood-group{
   position: relative;
@@ -162,8 +172,9 @@ input{
   top:5px;
   height: 5vh;
   width: 17%;
+  font-family: sourse Sans pro;
+  font-size: 17px;
   border-radius: 5px;
-  font-size: large;
 
 
 }
@@ -174,7 +185,8 @@ input{
   height: 5vh;
   width: 17%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 }
 .weight {
   position: relative;
@@ -183,7 +195,8 @@ input{
   height: 5vh;
   width: 17%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 
 }
 .birth-date{
@@ -193,7 +206,8 @@ input{
   height: 5vh;
   width: 12%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 }
 
 .month{
@@ -203,7 +217,8 @@ input{
   height: 5vh;
   width: 12%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 
 }
 .year{
@@ -213,7 +228,8 @@ input{
   height: 5vh;
   width: 12%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 }
  
 .contact-info{
@@ -221,14 +237,15 @@ input{
   margin-top: 10%;
   margin-left: 25px;
   font-size: 30px;
-  color: white;
+  color: black;
 }
 .contact-{
   position: relative;
   height: 5vh;
   width: 12%;
   border-radius: 5px;
-  font-size: large;
+  font-family: sourse Sans pro;
+  font-size: 17px;
 
 }
 
@@ -267,6 +284,11 @@ input{
 input:hover{
   opacity: 0.8;
 }
+
+
+
+
+
 
 
 
