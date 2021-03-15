@@ -1,0 +1,106 @@
+body{
+  
+  font-family: sourse Sans pro;
+  background: whitesmoke;
+  /* background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ; */
+  background-size: cover;
+  width: 100%;
+}
+
+/* navbar styling  */
+.navbar
+{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    overflow: hidden;
+    background: rgb(226, 69, 21);
+    border-radius: 10px;
+
+}
+
+.symbole 
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color:white;
+    
+}
+.navbar-style
+{
+    
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    color:white;
+}
+.input-field{
+    
+    position:absolute;
+    left: 25%;
+    font-family: sourse Sans pro;
+    font-size: larger;
+    border-radius: 5px;
+    border-style: none;
+    width: 40%;
+  
+}
+
+/* link styling */
+ .li
+{
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+    color:white;
+    font-weight: 6px;
+}
+
+
+/* link hover effects */
+
+.li::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  opacity: 0.7;
+  background: white;
+  transition: 0.3s;
+}
+.li:hover::after{
+  width:110%;
+  transition: width .4s;
+  color: white;
+}
+
+/* input field */
+
+input{
+  height:30px;
+  opacity:.5;
+  border-style:none;
+}
+
+
+/* ABout us */
+
+.about-us{
+
+  font-family: sourse Sans pro;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+.about-par{
+  margin-top: 8%;
+}
+.about-par h1{
+  font-size: 30px;
+}
