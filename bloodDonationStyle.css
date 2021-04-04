@@ -6,7 +6,7 @@ body{
   background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ;
   background-size: cover;
   width: 100%;
-  background-color: rgb(248, 242, 242);
+  background-color: #eeebdd;
 }
 
 /* navbar styling  */
@@ -18,7 +18,7 @@ body{
     width: 99%;
     overflow: hidden;
     /* background:url(background.jpg) no-repeat center; */
-    background-color:rgb(29, 10, 10);
+    background-color:#1b1717;
     border-radius: 10px;
 
 }
@@ -37,7 +37,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width:95%;
     color:white;
 }
 .input-field{
@@ -122,6 +122,10 @@ td{
   text-align: center;
   top: -3px;
   opacity: 0.7;
+  border-radius: 10px;
+  border-radius: 10px 50px;
+  background-color:rgba(228, 93, 15, 0.5); 
+  border:1px solid;
 
 }
 td:hover{
@@ -131,22 +135,23 @@ td:hover{
 }
 
 table{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    position: relative;
-    left:7%;
-    border-spacing: 0 1em;
-    border-collapse: collapse;
-    border:hidden;
-    height: 90%;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px black;
-    border-radius: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  left:7%;
+  border-spacing: 0 1em;
+  border-collapse: collapse;
+  border:hidden;
+  height: 90%;
+  box-sizing: border-box;
+  background-color: transparent;
+  background: none;
+
 }
 
 
 .circle{
-  margin: 50px 0px 0px 120px;
+  margin: 110px 10px 0px 120px;
   display: flex;
   border: 1px solid rgb(11, 132, 212);
   cursor: pointer;
@@ -225,17 +230,19 @@ table{
   text-align: center;
 }
 .button {
-  display: block;
+  display: flex;
   position: relative;
-  width: 65%;
-  border: none;
-  /* background-color: #bb290f; */
-  background: rgb(89, 233, 89);
+  width: 25%;
+  background-color: #03e9f4;
+  border-color: #03e9f4;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 13px;
   cursor: pointer;
   text-align: center;
-  left: 9.3%;
+  border-radius: 10px 50px;
+  justify-content: center;
+  margin: auto;
+
 }
 a{
   text-decoration: none;
@@ -260,9 +267,8 @@ a{
   bottom: 20px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(214, 69, 50, 0.5);
+  background: rgba(228, 93, 15, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px black;
   border-radius: 10px;
 }
 
@@ -275,15 +281,17 @@ a{
 
 .login-box .user-box {
   position: relative;
+  
 }
 
 .login-box .user-box input {
-  width: 100%;
+  width: 90%;
   padding: 10px 0;
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
   border: none;
+
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
@@ -299,37 +307,24 @@ a{
   transition: .5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
+
 
 .login-box form a {
   position: relative;
+  left: 105px;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  background-color: lightblue;
+  border-radius: 8px ;
+  
 }
 
-.login-box a:hover {
-  border-color:rgb(33, 124, 167) ;
-  color: #fff;
-  border-radius: 5px;
- 
-}
 
-.login-box a span {
-  position: absolute;
-  display: block;
-}
+
+
 

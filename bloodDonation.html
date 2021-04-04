@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Bank</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bloodDonationStyle.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
                 <a href="donate.html" class="li">Donate</a>
                 <a href="registration.html" class="li">Register</a>
                 <a href="contact.html" class="li">Contact</a>
-                <a href="" class="li"><i class="fa fa-bars"></i></a>
+                
             </section>
         </div>
     </nav>
@@ -40,7 +41,7 @@
                 
                   <tr>
                       
-                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>DONATIONS <br /></h2>
+                    <td ><h2>DONATIONS <br /></h2>
                       We are grateful for Our Real Hero and hope for them always success who helps Donate to Blood Bank<br />
                       <br>
                       <a href="donate.html" class="button">DONATE</a></td>
@@ -50,7 +51,7 @@
                   <tr>
                     
                       
-                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>VOLUNTEER  <br /></h2>
+                    <td><h2>VOLUNTEER  <br /></h2>
                       You will become a vital part of the biggest Bool Donation organization Blood bank today in the world <br />
                       <br>
                       <a href="registration.html" class="button">JOIN NOW</a></td>
@@ -59,7 +60,7 @@
                   
                   <tr>
                       
-                    <td style="background-color:rgba(228, 93, 15, 0.5); border:1px solid;"><h2>CAUSES  <br /></h2>
+                    <td><h2>CAUSES  <br /></h2>
                       Blood Bank today receive ecent causes to Fundraising for Charitable. We need your help<br />
                       <br>
                       <a href="causes.html" class="button">CAUSES</a></td>
@@ -85,12 +86,13 @@
             <h2>Login</h2>
             <form>
                 <div class="user-box">
-                    <input type="text" name="" required="">
-                    <label>Username</label>
+                    <input type="text" name="" required="" placeholder="Username">
+                    
                 </div>
                     <div class="user-box">
-                    <input type="password" name="" required="">
-                    <label>Password</label>
+                        <input type="password" id="password-field" placeholder="Password">
+                        <i id="pass-status" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+                    
                 </div>
                 <a href="#">
                    Submit
@@ -107,6 +109,6 @@
   <!-- starting with page 2 -->
 
 
-        
+  <script src="bloodDonationScript.js"></script>      
 </body>
 </html>
