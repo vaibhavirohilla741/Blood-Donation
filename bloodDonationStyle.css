@@ -124,7 +124,7 @@ td{
   opacity: 0.7;
   border-radius: 10px;
   border-radius: 10px 50px;
-  background-color:rgba(228, 93, 15, 0.5); 
+  background-color:#ce1212; 
   border:1px solid;
 
 }
@@ -151,14 +151,15 @@ table{
 
 
 .circle{
+  color:white;
   margin: 110px 10px 0px 120px;
   display: flex;
-  border: 1px solid rgb(11, 132, 212);
+  border: 1px solid #ce1212;
   cursor: pointer;
   width: 25%;
   height: 24vh;
   border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  background: -webkit-linear-gradient(left , #ce1212,#ce1212);
   opacity: 0.5;
   text-align: center; 
   transition: .5s;
@@ -172,13 +173,14 @@ table{
 
 }
 .circle-2{
+  color:white;
   margin: -180px 0px 0px 280px;
-  border: 1px solid rgb(11, 132, 212);
+  border: 1px solid #ce1212;
   cursor: pointer;
   width: 25%;
   height: 24vh;
   border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  background: -webkit-linear-gradient(left , #ce1212,#ce1212);
   opacity: 0.5;
   text-align: center; 
   transition: .5s;
@@ -192,13 +194,14 @@ table{
 
 }
 .circle-3{
+  color:white;
   margin: -50px 0px 0px 190px;
-  border: 1px solid rgb(11, 132, 212);
+  border: 1px solid #ce1212;
   cursor: pointer;
   width: 25%;
   height: 24vh;
   border-radius: 360px;
-  background: -webkit-linear-gradient(left , rgb(18, 109, 214),rgb(13, 117, 177));
+  background: -webkit-linear-gradient(left , #ce1212,#ce1212);
   opacity: 0.5;
   text-align: center; 
   transition: .5s;
@@ -233,7 +236,7 @@ table{
   display: flex;
   position: relative;
   width: 25%;
-  background-color: #03e9f4;
+  background-color: white;
   border-color: #03e9f4;
   padding: 14px 28px;
   font-size: 13px;
@@ -267,7 +270,7 @@ a{
   bottom: 20px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(228, 93, 15, 0.5);
+  background: #bd2000;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -287,8 +290,9 @@ a{
 .login-box .user-box input {
   width: 90%;
   padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
   margin-bottom: 30px;
   border: none;
 
@@ -319,7 +323,7 @@ a{
   text-transform: uppercase;
   overflow: hidden;
   margin-top: 40px;
-  background-color: lightblue;
+  background-color: white;
   border-radius: 8px ;
   
 }
