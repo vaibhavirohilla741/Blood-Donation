@@ -15,7 +15,7 @@ body{
     position: fixed;
     margin: 0px;
     padding: 0px;
-    width: 99%;
+    width: 100%;
     overflow: hidden;
     /* background:url(background.jpg) no-repeat center; */
     background-color:#1b1717;
@@ -98,7 +98,8 @@ input{
 .column {
   padding: 10px;
   height: 600px; /* Should be removed. Only for demonstration */
-  margin-top: 65px;
+  margin-top: 7%;
+  margin-bottom: 30px;
   
 }
 
@@ -135,14 +136,14 @@ td:hover{
 }
 
 table{
-  margin-top: 8px;
+  
   margin-bottom: 8px;
   position: relative;
   left:7%;
-  border-spacing: 0 1em;
+  
   border-collapse: collapse;
   border:hidden;
-  height: 90%;
+  height: 80%;
   box-sizing: border-box;
   background-color: transparent;
   background: none;
@@ -226,11 +227,22 @@ table{
     
 }
 
+a{
+  text-decoration: none;
+}
+
 .footer {
-  background-color:rgb(29, 10, 10);;
-  padding: 10px;
-  color:white;
+  position: fixed;
+  left:0;
+  bottom: 0;
   text-align: center;
+  padding: 3px;
+  width: 100%;
+  overflow: hidden;
+  background-color:#1b1717;
+  color: white;
+  font-weight: bolder;
+
 }
 .button {
   display: flex;
@@ -247,10 +259,7 @@ table{
   margin: auto;
 
 }
-a{
-  text-decoration: none;
-  color:black;
-}
+
 .home-page,.find-blood{
   border:  blue;
 }
@@ -263,10 +272,10 @@ a{
 
 .login-box {
  
-  width: 400px;
+  width: 370px;
   position:absolute;
   bottom: -30px;
-  left: 1230px;
+  
   bottom: 20px;
   padding: 40px;
   transform: translate(-50%, -50%);
