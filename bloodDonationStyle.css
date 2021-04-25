@@ -1,4 +1,4 @@
-body{
+ body{
   
   font-family: sourse Sans pro;
   background: black;
@@ -7,6 +7,7 @@ body{
   background-size: cover;
   width: 100%;
   background-color: #eeebdd;
+  overflow: hidden;
 }
 
 /* navbar styling  */
@@ -40,17 +41,7 @@ body{
     width:95%;
     color:white;
 }
-.input-field{
-    
-    position:absolute;
-    left: 25%;
-    font-family: sourse Sans pro;
-    font-size: larger;
-    border-radius: 5px;
-    border-style: none;
-    width: 40%;
-  
-}
+
 
 /* link styling */
  .li
@@ -105,9 +96,9 @@ input{
 
 /* Left and right column */
 .column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
+  margin: 0;
    flex: 1; 
+
 }
 
 /* Middle column */
@@ -137,18 +128,19 @@ td:hover{
 
 table{
   
-  margin-bottom: 8px;
   position: relative;
   left:7%;
-  
+  top: -25px;
+  margin-top: 110px;
   border-collapse: collapse;
   border:hidden;
-  height: 80%;
+  height: 75%;
   box-sizing: border-box;
   background-color: transparent;
   background: none;
 
 }
+
 
 
 .circle{
@@ -246,36 +238,27 @@ a{
 }
 .button {
   display: flex;
-  position: relative;
   width: 25%;
   background-color: white;
   border-color: #03e9f4;
   padding: 14px 28px;
-  font-size: 13px;
+  font-size: 16px;
   cursor: pointer;
-  text-align: center;
+  
   border-radius: 10px 50px;
   justify-content: center;
-  margin: auto;
+  margin: 20px;
+  -moz-box-align: center;
+  text-align: center;
 
 }
 
-.home-page,.find-blood{
-  border:  blue;
-}
 
-
-.blood{
-  border:  blue;
-  margin-left: -10px;
-}
 
 .login-box {
  
   width: 370px;
   position:absolute;
-  bottom: -30px;
-  
   bottom: 20px;
   padding: 40px;
   transform: translate(-50%, -50%);
@@ -322,20 +305,6 @@ a{
 
 
 
-.login-box form a {
-  position: relative;
-  left: 105px;
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  margin-top: 40px;
-  background-color: white;
-  border-radius: 8px ;
-  
-}
 
 
 

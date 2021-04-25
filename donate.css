@@ -1,10 +1,16 @@
 body{
   
   font-family: sourse Sans pro;
-  background: whitesmoke;
-  /* background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ; */
+  background: black;
+  /* background-image: url(pexels-paul-cameron-1187974.jpg); */
+  background: url(pexels-johannes-plenio-1996035.jpg) no-repeat fixed ;
   background-size: cover;
   width: 100%;
+  background-color: #eeebdd;
+  overflow: scroll;
+}
+section {
+  border:5px solid black;
 }
 
 /* navbar styling  */
@@ -13,12 +19,14 @@ body{
     position: fixed;
     margin: 0px;
     padding: 0px;
-    width: 99%;
+    width: 100%;
     overflow: hidden;
-    background: rgb(226, 69, 21);
+    /* background:url(background.jpg) no-repeat center; */
+    background-color:#1b1717;
     border-radius: 10px;
-
+    color:white;
 }
+
 
 .symbole 
 {
@@ -34,20 +42,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width:100%;
+    width:95%;
     color:white;
 }
-.input-field{
-    
-    position:absolute;
-    left: 25%;
-    font-family: sourse Sans pro;
-    font-size: larger;
-    border-radius: 5px;
-    border-style: none;
-    width: 40%;
-  
-}
+
 
 /* link styling */
  .li
@@ -57,20 +55,19 @@ body{
     display: inline-block;
     margin-left: 15px;
     margin-right: 18px;
-    color:black;
+    color:white;
     font-weight: 6px;
 }
 
 
 /* link hover effects */
-
 .li::after{
   content: '';
   display: block;
   width: 0;
   height: 2px;
   opacity: 0.7;
-  background: black;
+  background: -webkit-linear-gradient(left , rgb(193, 191, 212) , rgb(196, 89, 63));
   transition: 0.3s;
 }
 .li:hover::after{
@@ -285,7 +282,24 @@ input:hover{
   opacity: 0.8;
 }
 
+.footer {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+  overflow: hidden;
+  background-color:#1b1717;
+  color: white;
+  font-weight: bolder;
+ 
 
+}
+
+a {
+  text-decoration: none;
+}
 
 
 
